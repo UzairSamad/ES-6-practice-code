@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+                                                         // Destructuring Array
+                                                         
+        var array = ["My","Name","IS","Uzair"]
+        console.log(array);
+
+        //name1 will be assigned by My $ name2 will be with Name                                            
+        var [name1,name2] = ["My","Name","IS","Uzair"]   
+        console.log(name1);
+        console.log(name2);
+                                // ( ,) skip one element every time
+
+        //name3 will be assigned by Is $ name4 will be with Uzair
+        var [,,name3,name4] = ["My","Name","IS","Uzair"]
+        console.log(name3);
+        console.log(name4);
+
+
+        //( ... ) three dots unpack the string and this will be assinged like a array
+       // here name5 will be My and newArray will be the new array containing remaining elements
+       
+        var [name5,...newArray] = ["My","Name","IS","Uzair"]
+        console.log(newArray);
+        
+
+
+        
+        
+        
+        
+        
+
+    </script>
+
+
+
+</body>
+</html>

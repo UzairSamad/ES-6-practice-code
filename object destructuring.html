@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // var data = {
+    //     name : "Uzair",
+    //     age : 17,
+    //     gender : "male"
+    // }
+
+                                 // destructuring object items name into name and so on..
+    // var {name,age,person} = data
+    // console.log(age)
+
+
+
+                                 // it is also possible to assing value to a object that is not declared
+    // var {name,age,gender} = {name:"Catty" , age:"21" , gender:"female"}
+    // console.log(age)    
+
+
+    
+                              //it is also possible to assing value to variable that are declared before 
+                            // the name of new variable should be same as the keys of object otherwise it will be undifined
+
+//     var data = {
+//         name : "Uzair",
+//         age : 17,
+//         gender : "male"
+//     };
+//     var name,age,gender;
+
+//    ({name,age,gender} = data);
+//     console.log(age);
+
+
+
+
+
+                        //if we want to use a new variable name and assing it object key value
+
+//      var data = {
+//         name : "Uzair",
+//         age : 17,
+//         gender : "male"
+//     }
+//                                     //changing key names with new variables
+// var {name:nickname , age:umer} = data
+// console.log(nickname);
+
+
+
+                            //using default value , it will assing only in-case when key is not there / undefined
+
+//     var data = {
+//         name : "Uzair",
+//         age : 17,
+//         gender : "male"
+//     }                          
+
+// var {name="usama" , friend ="wahab"} = data
+//                          // name is same as the object value
+// console.log(name);     
+//                         //friend is with default value of wahab
+// console.log(friend);
+
+ 
+                                    //we can also set default value when assinging with a new name
+
+//   var data = {
+//          name : "Uzair",
+//          age : 17,
+//          gender : "male"
+//      }
+
+//  var {name:nickname = "uzey" , age:umer = "barahogya", friend:dost = "koi hai hi ni"} = data
+//  console.log(nickname);
+//  console.log(dost);
+
+
+                    //computed property name 
+                    //you can specify the name of a property 
+
+// var data = {
+//          name : "Uzair",
+//          age : 17,
+//          gender : "male"
+//   }
+
+//   var prop = "name";
+//   var {[prop]:myname}=data
+//   console.log(myname);
+   
+                                        //combining arrays
+// var data = {
+//         name : "Uzair",
+//         age : 17,
+//         gender : "male",
+//         friends:["faiq","ibad","wahib"]
+//     }
+
+//   var {name:nick , friends:dost} = data
+//   console.log(dost);
+  
+
+                        //rest method means you can assing more the one value to a variable
+var data = {
+         name : "Uzair",
+         age : 17,
+         gender : "male",
+         friends:["faiq","ibad","wahib"]
+ }
+
+var{name,...others}=data
+console.log(name);
+console.log(others);
+
+
+    
+
+    </script>
+</body>
+</html>

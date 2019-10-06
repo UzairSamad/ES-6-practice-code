@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>         
+    //                         //variable hoisting          
+    //  name= "uzair"
+    // document.write(name)
+    // var name 
+    // document.write(name);
+                       // hoisting variable inside a function
+
+
+//     function getShape(condition) {
+//     // shape exists here with a value of undefined
+//     // OUTPUT : undefined
+//     console.log(shape);
+//     if (condition) {
+//         var shape = "square";
+//         // some other code
+//         return shape;
+//     } else {
+//         // shape exists here with a value of undefined
+//         return false;
+//     }
+
+// }
+// console.log(getShape());
+
+
+
+
+
+
+
+//                                              //hositing with let keyword
+
+
+//    // console.log(city);    //it will give type error here
+
+//     let city ="Inter"
+//     console.log(city);         //it will print the city name
+
+
+
+
+
+
+
+//                             //hoisting with const keyword
+//     const shape = "square"
+//     console.log(shape);
+//    // shape = "triangle"     this will give a error re-assingment to const variable
+
+
+//   const name;         //missing initalizor error
+//    console.log(name);
+   
+    
+const data = {
+    "name": "uzair",
+    "age" : 17
+}
+data.age = "25"                         // in const object we can modify property
+console.log(data);
+
+
+
+    
+    
+
+
+  
+
+    </script>
+
+
+
+</body>
+</html>
